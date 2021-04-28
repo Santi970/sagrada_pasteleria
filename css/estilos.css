@@ -1,0 +1,1279 @@
+/* titulos font-family: 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* cuerpo font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+* {
+  margin-top: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #efefef;
+  font-family: "Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Nav Bar */
+
+#mainNav {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  padding: 0;
+  box-shadow: 1px 1px 5px #999;
+}
+
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #3c9492;
+  border: 0;
+}
+
+#mainNav .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #949494;
+  letter-spacing: 0.0625em;
+  margin-right: 2rem;
+  margin-top: 30px;
+}
+#mainNav .nav-link:hover {
+  color: #3c9492;
+}
+#mainNav .nav-link .back-icon {
+  margin: 0;
+}
+
+#mainNav .navbar-brand img {
+  height: 2.5rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #3c9492;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 3rem;
+    transition: height 0.5s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1d1515e7;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.2em;
+  }
+
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+#sombras {
+  box-shadow: 0 0 7px #070808;
+}
+
+#sombra-inferior {
+  box-shadow: 5px 5px 25px #081c15e1;
+}
+
+/* Carousel index */
+.slider {
+  width: 100%;
+  height: 650px;
+  margin: auto;
+  margin-top: 92px;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  margin-top: 2em;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  border-radius: 2px;
+  width: 130vh;
+  height: 90%;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px 5px #999;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 10;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
+
+header.masthead {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../img/img_sagrada/3IMAGENES.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+  
+}
+
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  color:  white;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading:hover {
+  color: #3c9492;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    height: 20vh;
+    padding-top: 2rem;
+    padding-bottom: 25rem;
+    background-color: white;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    margin-top:  9rem;
+    align-items:center;
+  }
+}
+
+/*  WAVES tortas */
+#section-tortas {
+  width: 100%;
+  min-height: 290px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.section-tortas_wave {
+  position: relative;
+  background-image: url(../img/img_sagrada/todas.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: start;
+  background-size: cover;
+}
+
+.section-tortas_wave:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: url(../img/img_sagrada/todas.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*  WAVES index */
+#section-index {
+  width: 100%;
+  min-height: 290px;
+}
+
+.section-index_wave {
+  position: relative;
+  background-image: url(../img/img_sagrada/todas.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-index_wave:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  background: url(../css/wave/wave_index_withe.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+#color-sagrado {
+  color: #3c9492;
+}
+
+/* -------------------     FOOTER  ------------------------- */
+.footer {
+  background-color: #212529;
+  text-align: center;
+  font-size: 0.9rem;
+  height: 200px;
+  min-height: 100%;
+  position: relative;
+}
+
+#colorFooterText {
+  color: white;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+#imgFooter {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+#wrapper {
+  padding-bottom: 81px;
+  min-height: calc(100% - 81px);
+  position: relative;
+}
+
+header {
+  color: black;
+  background-color: rgba(245, 245, 220, 0.322);
+}
+
+.container {
+  padding: 12px;
+}
+
+/*-----------SIZE CARDS------------*/
+#cardSpaceCarouselIndex {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #fdfef7e7;
+}
+
+.d-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#cardSpaceIframe {
+  position: relative;
+  padding-bottom: 35rem;
+  height: 0 auto;
+  border-radius: 30px;
+  margin: 80px 80px 0px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#cardSpaceIframe .iframe {
+  position: absolute;
+  top: 150px;
+  left: 10;
+  width: 94%;
+  height: 70%;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  box-shadow: 2px 2px 10px #666;
+}
+
+/*  BANER INDEX */
+#BannerIndex {
+  box-shadow: 2px 2px 10px #666;
+  padding: 3px;
+  width: 100%;
+  height: 356px;
+  margin-top: 25px;
+  margin-bottom: 3rem;
+}
+#BannerIndex img {
+  width: 100%;
+  height: 350px;
+}
+
+.BannerIndex_a {
+  text-decoration: none;
+}
+
+
+/*    DETALLE TORTAS     */
+
+#sombra-inferior {
+  box-shadow: 1px 1px 5px #666;
+}
+
+#detalle-torta .detalle-torta__item {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#detalle-torta .detalle-torta-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#detalle-torta .detalle-torta-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3c9492dc;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#detalle-torta .detalle-torta-hover .detalle-torta-hover-content {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+#detalle-torta .detalle-torta-hover .frase-hover {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin: 2px;
+}
+
+#detalle-torta .detalle-torta-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+#detalle-torta .detalle-torta-caption .detalle-torta-caption-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+#detalle-torta .detalle-torta-caption .detalle-torta-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+#detalle-torta
+  .detalle-torta-item
+  .detalle-torta-link:hover
+  .detalle-torta-hover {
+  opacity: 1;
+}
+
+.detalle-torta-modal .modal-dialog {
+  max-width: 70vw;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+.detalle-torta-modal .modal-dialog .modal-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  
+}
+
+.detalle-torta-modal h2.item-intro {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  
+}
+
+.detalle-torta-modal p.item-intro {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.detalle-torta-modal ul.list-inline {
+  margin-bottom: 2rem;
+}
+
+.detalle-torta-modal img {
+  margin-bottom: 1rem;
+  min-width: 100%;
+  font-weight: 300;
+}
+
+.detalle-torta-modal .img-fluid {
+  margin: 1rem;
+  width: 90%;
+  box-shadow: 2px 2px 10px #666;
+}
+
+.detalle-torta-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.detalle-torta-modal .close-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.detalle-torta-modal .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.detalle-torta-modal .text-uppercase {
+  margin-top: -3rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+#margin-p {
+  margin-bottom: 15px;
+}
+
+/* Las Sagradas*/
+#las-sagradas {
+  padding-bottom: 0rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#las-sagradas .las-sagradas__articulo {
+  margin: 20px;
+  text-align: center;
+}
+#las-sagradas .las-sagradas__img-div {
+  overflow: hidden;
+  text-align: center;
+  background-image: url("../img/img_mobile/equipo_contortas_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  margin: 0px;
+}
+#las-sagradas .las-sagradas__img-div img {
+  visibility: hidden;
+}
+#las-sagradas .las-sagradas__text {
+  order: 2;
+}
+#las-sagradas h4 {
+  color: #3c9492;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+#las-sagradas h5 {
+  color: #454a46;
+  font-size: 25px;
+  margin: 10px 0 10px 0;
+}
+#las-sagradas p {
+  color: #454a46;
+  margin-bottom: 30px;
+  font-size: 15px;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* De aca se modifica la pantalla grande no mobile*/
+@media (min-width: 800px) {
+  #las-sagradas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 80px;
+    text-align: center;
+  }
+  #las-sagradas p {
+    margin: 20px;
+    padding: 0 20px 0 0;
+    text-align: center;
+    color: #454a46;
+    font-size: 20px;
+    width: 50vw;
+  }
+  #las-sagradas h4 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  #las-sagradas h5 {
+    font-size: 25px;
+    margin: 40px 0 0 0;
+    text-align: justify;
+  }
+  #las-sagradas h3 {
+    font-size: 47px;
+    margin: 50px 0 0 0;
+  }
+  #las-sagradas .las-sagradas__articulo {
+    display: flex;
+    margin: 70px 50px;
+    justify-content: center;
+  }
+  #las-sagradas .las-sagradas__text {
+    order: 2;
+  }
+  #las-sagradas .las-sagradas__text p {
+    margin-bottom: 0;
+    width: 500px;
+  }
+  #las-sagradas .las-sagradas__img-div {
+    order: 1;
+    margin: 10px 60px;
+  }
+}
+
+/*  Footer - contacto*/
+footer {
+  background-color: #3c9492;
+  height: 30vh;
+}
+
+#contacto {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#contacto .contacto__ubicacion h4 {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  order: 0;
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900; 
+}
+
+#contacto .contacto__tel {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  order: 1;
+  font-size: 22px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+#contacto p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+#contacto .tel_wsap {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1eaea;
+  font-family: 'Open Sans', sans-serif;
+}
+#contacto .tel_wsap:hover {
+  color: white;
+}
+#contacto .ic_ubicacion {
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1eaea;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border: none;
+    background-color: white;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  #mainNav .navbar-brand img {
+    height: 3.5rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+}
+
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+#size-logonav {
+  font-size: 2rem;
+  overflow: hidden;
+  margin-top: -0.9rem;
+}
+
+
+/*////////////////////////////////////////////////// MEDIA QUERIES modo MOBILE! ///////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 576px) {
+  #detalle-torta {
+    margin-top: 10vh;
+  }
+
+  /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
+
+  header.masthead {
+    margin: 1px;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: white;
+    color: #fff;
+    background-image: url("../img/img_mobile/banner_img_mobile_mod.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  
+  }
+  header.masthead .container{
+    margin: 1rem
+  }
+  
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    color:  white;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .masthead-heading:hover {
+    color: #3c9492;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      height: 20vh;
+      padding-top: 12rem;
+      padding-bottom: 25rem;
+      background-color: white;
+    }
+    header.masthead .masthead-heading {
+      font-size: 6.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-top: 14.5rem; 
+      align-items:center;
+    }
+  }
+
+  /* DETALLE TORTA MODAL #detalle-torta  */
+
+  .detalle-torta-modal .modal-dialog {
+    min-width: 95%;
+    margin-left: auto;
+  }
+
+  .detalle-torta-modal .modal-content h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: "Amatic SC", cursive;
+    margin-bottom: 2rem;
+  }
+
+  .detalle-torta-modal img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: auto;
+  }
+  .detalle-torta-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  /* HOVER OCULTO MOBILE */
+  #detalle-torta .detalle-torta-hover {
+    visibility: hidden;
+  }
+  #detalle-torta .detalle-torta-hover .detalle-torta-hover-content {
+    visibility: hidden;
+  }
+  #detalle-torta .detalle-torta-hover .frase-hover {
+    visibility: hidden;
+  }
+  .detalle-torta-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+  
+
+  #size-logonav {
+    font-size: 2rem;
+    overflow: hidden;
+    margin-top: -10rem;
+  }
+
+  #detalle-torta_mobilemargin {
+    margin-top: 70px;
+  }
+  
+  /* Carousel index */
+  .slider {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    border-top: 1px solid;
+    margin-bottom: 10px;
+  }
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+  }
+  .slider li {
+    width: 100%;
+    margin-left: 0;
+    list-style: none;
+    border-bottom: 1px solid;
+  }
+  .slider img {
+    margin-top: 3.5rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+
+  /* Las Sagradas  #3c9492;*/
+  /* Footer */
+  footer {
+    background-color: #3c9492;
+    height: 50vh;
+  }
+  #contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contacto .contacto__articulo {
+    margin: 10px;
+    text-align: center;
+  }
+  #contacto .contacto__ubicacion h4 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #contacto .tel_wsap {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #d4d0d0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #contacto .tel_wsap:hover {
+    color: white;
+  }
+  #contacto .ic_ubicacion {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #d4d0d0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .margin-footer {
+    margin-top: -142px;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  /*  WAVES control */
+  #section-index {
+    width: 100%;
+    min-height: 1px;
+  }
+  .section-index_wave {
+    visibility: hidden;
+  }
+  #section-tortas {
+    width: 100%;
+    min-height: 1px;
+  }
+  .section-tortas_wave {
+    visibility: hidden;
+  }
+
+  /* DETALLE TORTA MODAL #detalle-torta  */
+
+  .detalle-torta-modal .modal-content h2 {
+    font-size: 1rem;
+    line-height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -10px;
+   
+  }
+
+  .detalle-torta-modal p.item-intro {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .detalle-torta-modal img {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: auto;
+  }
+  .detalle-torta-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .detalle-torta-modal .close-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+  .detalle-torta-modal .modal-dialog {
+    max-width: 70vw;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .detalle-torta-modal .modal-dialog .modal-content {
+    padding-top: 2rem;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  .detalle-torta-modal h2.item-intro {
+    margin: 0;
+    font-size: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  .detalle-torta-modal p.item-intro {
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .detalle-torta-modal .close-modal {
+    position: absolute;
+    top: 0rem;
+    right: 1em;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .detalle-torta-modal .close-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+  .detalle-torta-modal .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+/*//////////////////////////////////////// MEDIA QUERIES modo TABLET! ////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+  /*  BANER INDEX */
+
+  #mainNav {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    padding: 0;
+    box-shadow: 1px 1px 5px #999;
+  }
+
+
+  /* Carousel index */
+  .slider {
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    margin-top: 92px;
+    overflow: hidden;
+  }
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    margin-top: 2em;
+  }
+  .slider li {
+    width: 100%;
+    list-style: none;
+  }
+  .slider img {
+    border-radius: 2px;
+    width: 100%;
+    height: 90%;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 5px #999;
+  }
+
+  header.masthead {
+  
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../img/img_mobile/banner_img_mobile.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+  }
+  
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    color:  white;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .masthead-heading:hover {
+    color: #3c9492;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      height: 20vh;
+      padding-top: 12rem;
+      padding-bottom: 25rem;
+      background-color: white;
+    }
+    header.masthead .masthead-heading {
+      font-size: 6.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-top: 14.5rem; 
+      align-items:center;
+    }
+  }
+
+
+  /*  WAVES tortas */
+#section-tortas {
+  width: 100%;
+  height: 90px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.section-tortas_wave {
+  position: relative;
+  background-image: url(../img/img_sagrada/todas.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-tortas_wave:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url(../img/img_sagrada/todas.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+  .menu {
+    text-align: start;
+    width: 90%;
+    font-size: 14px;
+    display: none;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.726);
+  }
+  .menu li a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  .nav_titulo .nav__h1 {
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  #btnVerMasIndex {
+    margin-left: 10px;
+  }
+  #btnComprarTortas {
+    display: flex;
+    justify-content: center;
+  }
+  /* MEDIA QUERIES - Footer */
+  .containerFooter {
+    flex-wrap: wrap;
+  }
+  .rowColumn2,
+  .rowColumn3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  /* Las Sagradas*/
+  #las-sagradas {
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #las-sagradas .las-sagradas__articulo {
+    margin: 20px;
+    text-align: center;
+  }
+  #las-sagradas .las-sagradas__img-div {
+    overflow: hidden;
+    text-align: center;
+    background-image: url("../img/img_mobile/equipo_contortas_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 80vh;
+    margin: 0px;
+    margin-bottom: -30px;
+  }
+  #las-sagradas .las-sagradas__img-div img {
+    visibility: hidden;
+  }
+  #las-sagradas .las-sagradas__text {
+    order: 2;
+    overflow: hidden;
+  }
+  #las-sagradas h4 {
+    color: #3c9492;
+    font-size: 30px;
+    border-bottom: 1px solid #3c9492;
+  }
+  #las-sagradas h5 {
+    color: #454a46;
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+  }
+  #las-sagradas p {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  /*---------------------- MEDIA QUERY detalle torta  ------------------- */
+  .contentIndex div p {
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 18px;
+    padding: 10px;
+  }
+  .cardBannerIndex3 {
+    margin-bottom: 70px;
+  }
+}
+
+/*//////////////////////////////////////// MEDIA QUERIES modo MONITOR GRANDE! ////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1900px) {
+  .carousel-item img {
+    margin-left: 200px;
+  }
+  /* presentacion de variedades index */
+  #cardSpaceIndex {
+    margin-left: 400px;
+  }
+  /*  WAVES tortas */
+  /*  WAVES tortas */
+  #section-tortas {
+    width: 100%;
+    min-height: 290px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .detalle-torta-modal .modal-dialog .modal-content {
+    padding-top: 2rem;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  .detalle-torta-modal h2.item-intro {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  .detalle-torta-modal p.item-intro {
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .section-tortas_wave {
+    position: relative;
+    background-image: url(../img/img_sagrada/todas.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: start;
+    background-size: cover;
+  }
+
+  .section-tortas_wave:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url(../img/img_sagrada/todas.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /*  WAVES index */
+  #section-index {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .section-index_wave {
+    position: relative;
+    background-image: url(../img/img_sagrada/todas.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .section-index_wave:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../css/wave/wave_tortas.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+    
+
+}
