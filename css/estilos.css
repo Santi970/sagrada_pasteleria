@@ -739,6 +739,8 @@ svg {
     margin-top: 10vh;
   }
 
+  
+
   /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
 
   header.masthead {
@@ -1107,7 +1109,7 @@ svg {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-tortas_wave:before {
@@ -1121,7 +1123,7 @@ svg {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
   .menu {
     text-align: start;
@@ -1286,6 +1288,7 @@ svg {
     background-position: center center;
     background-size: cover;
   }
+  
 
   .section-index_wave:before {
     content: "";
