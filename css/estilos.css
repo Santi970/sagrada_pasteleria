@@ -194,6 +194,7 @@ body {
   height: 60vh;
 }
 header.masthead {
+
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -753,7 +754,7 @@ svg {
   animation-iteration-count: infinite;
 
   -webkit-animation-name:parpadeo;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
@@ -785,11 +786,14 @@ svg {
   #las-sagradas {
     margin-top: 1rem;
   }
+  .banner_index{
+    margin-top: 2rem;
+  }
 
   /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
 
   header.masthead {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     margin: 1px;
     height: 20rem;
     padding-top: 2.5rem;
@@ -897,7 +901,7 @@ svg {
     width: 100%;
     height: 400px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 3.5rem;
     overflow: hidden;
     border-top: 1px solid;
     margin-bottom: 10px;
