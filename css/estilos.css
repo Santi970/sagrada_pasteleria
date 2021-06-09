@@ -738,13 +738,16 @@ svg {
   #detalle-torta {
     margin-top: 10vh;
   }
+  #las-sagradas {
+    margin-top: 3rem;
+  }
 
-  
 
   /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
 
   header.masthead {
     margin: 1px;
+    height: 20rem;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -762,6 +765,7 @@ svg {
   }
   
   header.masthead .masthead-heading {
+    margin-top: 4rem;
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
@@ -1164,6 +1168,7 @@ svg {
 
   /* Las Sagradas*/
   #las-sagradas {
+  
     padding-bottom: 1rem;
     text-align: center;
     display: flex;
