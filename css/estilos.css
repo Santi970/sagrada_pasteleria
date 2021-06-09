@@ -106,8 +106,10 @@ body {
 
 /* Carousel index */
 .slider {
+  display: flex ;
+  flex-direction: column;
   width: 100%;
-  height: 650px;
+  height: 100vh;
   margin: auto;
   margin-top: 92px;
   overflow: hidden;
@@ -185,7 +187,12 @@ body {
 }
 
 /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
-
+#banner_index{
+  display: flex ;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+}
 header.masthead {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -411,7 +418,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #3c9492dc;
+  background: #ffffffdc;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -732,6 +739,43 @@ svg {
   margin-top: -0.9rem;
 }
 
+/* TEXTO PARPADEANTE */
+
+.text {
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
 
 /*////////////////////////////////////////////////// MEDIA QUERIES modo MOBILE! ///////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 576px) {
@@ -739,13 +783,13 @@ svg {
     margin-top: 10vh;
   }
   #las-sagradas {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
-
 
   /*  ---------------------------- PROBANDO MASTCHEAD ---------------------------- */
 
   header.masthead {
+    margin-top: 1.5rem;
     margin: 1px;
     height: 20rem;
     padding-top: 2.5rem;
